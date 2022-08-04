@@ -1,0 +1,20 @@
+<canvas width = "600" height="400"></canvas>
+<script>
+	var pantalla = document.querySelector("canvas");
+	var pincel = pantalla.getContext("2d");
+	function bandera (color1,color2,color3){
+		pincel.fillStyle = color1 // propiedad
+		pincel.fillRect(0,0,200,400) // funcion
+		pincel.fillStyle = color2 // propiedad
+		pincel.fillRect(200,0,200,400) // funcion
+		pincel.fillStyle = color3 // propiedad
+		pincel.fillRect(400,0,200,400) // funcion
+	}
+	pincel.fillStyle = "lightgrey" // propiedad
+	pincel.fillRect(0,0,600,400) // funcion
+
+	
+	bandera("green","yellow","red")
+
+	
+</script>

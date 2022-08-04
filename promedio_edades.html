@@ -1,0 +1,27 @@
+<meta charset "UTF-8">
+<script>
+
+function saltarLinea(){
+	document.write("<br>");
+}
+
+function imprimir(frase){
+	document.write(frase);
+	saltarLinea();
+}
+
+var numeroMiembros = parseInt(prompt("Ingrese el número de miembros de la Familia"))
+var Edades = 0
+var contador = 1
+
+while (contador <= numeroMiembros) {
+	edad = parseInt(prompt("Ingrese la edad del familiar "+ contador))
+	Edades += edad
+	contador++
+} 
+
+media = Edades/numeroMiembros
+
+imprimir("La media de las edades de la familia es: " + media)
+
+</script>

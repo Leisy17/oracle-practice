@@ -1,0 +1,44 @@
+<meta charset="UTF-8">
+<script>
+
+function saltarLinea(){
+
+	document.write("<br>");
+
+}
+
+function Imprimir(frase){
+
+	document.write(frase);
+	saltarLinea();
+
+}
+
+Imprimir("Números pares")
+
+var contador = 1
+
+while (contador <= 100) {
+	if (contador % 2 == 0) {
+		Imprimir(contador + " es par")
+	}
+	
+	contador++	
+}
+
+Imprimir("Fin Pares")
+
+saltarLinea()
+
+Imprimir("Números impares")
+
+
+for (var contador = 1; contador <= 100; contador++) { 
+	if (contador % 2 != 0) {
+		Imprimir(contador + " es impar")
+	}
+}
+
+Imprimir("Fin Impares")
+
+</script>

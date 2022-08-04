@@ -1,0 +1,44 @@
+<meta charset="UTF-8">
+<input/>
+<button>Verificar si acertó con el secreto</button>
+<script>
+
+function saltarLinea(){
+	document.write("<br>");
+}
+
+function imprimir(frase){
+	document.write(frase);
+	saltarLinea();
+}
+var numeroLanzado = document.querySelector("input");
+numeroLanzado.focus();
+var numeroPensado = Math.round(Math.random()*10);
+
+function verificar(){
+
+var intentos = 3;
+var encontrado = false;
+for (var contador=1 ;contador <= intentos; contador++){
+
+	if (numeroPensado == parseInt(numeroLanzado.value)) {
+		alert("Usted acertó, en el intento " + contador + "el número pensado era " + numeroPensado);
+		encontrado = true;
+		break;
+	} 
+	
+}
+
+	if (encontrado == false) {
+			alert("Usted erró, el número pensado era: " + numeroPensado);
+}
+}
+
+
+var button = document.querySelector("button");
+button.onclick = verificar;
+
+	
+imprimir("Fin")
+
+</script>

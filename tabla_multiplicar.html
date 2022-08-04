@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+<script>
+
+function saltarLinea(){
+	document.write("<br>");
+}
+
+function imprimir(frase){
+	document.write(frase);
+	saltarLinea();
+}
+
+var numero=parseInt(prompt("Ingrese el número"))
+contador = 1
+
+imprimir("WHILE")
+
+while (contador <= numero) {
+
+	tabla=contador*numero
+	imprimir(tabla)
+	contador++
+        
+}
+
+imprimir("FOR")
+
+for (var numero;contador <= numero;contador++){
+	imprimir(contador*numero)	
+}
+</script>

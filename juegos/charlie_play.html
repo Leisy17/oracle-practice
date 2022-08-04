@@ -1,0 +1,97 @@
+<canvas width = "600" height="700"></canvas>
+<script>
+var pantalla = document.querySelector("canvas");
+var pincel = pantalla.getContext("2d");
+
+	
+
+	function dibujar (x,y,w,z,color){
+
+		pincel.fillStyle = color; // propiedad
+		pincel.fillRect(x,y,w,z); // funcion
+		pincel.strokeStyle = "black";
+		pincel.strokeRect(x,y,w,z)
+		
+	}
+
+	//Gama de colores y accesorios
+	
+	
+	color_piel = prompt("Insert Charlie skin color");
+	color_zapatos = prompt("Insert Charlie shoes color");
+	color_sombrero = prompt("Insert Charlie hat color");
+	color_tatuaje = prompt("Insert Charlie tattoo color");
+	color_nariz = prompt("Insert Charlie nose color");
+	color_camisa = prompt("Insert Charlie T-shirt color");
+	color_pantalon = prompt("Insert Charlie pants color");
+
+	//Color del accesorio del sombrero
+
+	dibujar (100,100, 50, 50, color_pantalon);
+
+	//Sombrero	
+
+	dibujar(140,140,100,100,color_sombrero);
+	dibujar(150,120,130,100,color_sombrero);
+	dibujar(170,100,130,100,color_sombrero);	
+	dibujar(300,130,30,70,color_sombrero);
+	dibujar(330,130,30,50,color_sombrero);
+	dibujar(360,150,20,30,color_sombrero);
+	dibujar(380,130,20,50,color_sombrero);
+	dibujar(400,130,20,20,color_sombrero);
+	dibujar(160,240,60,30,color_sombrero);
+	dibujar(200,240,20,50,color_sombrero);
+
+	
+	//Piel
+
+	dibujar(160,270,40,20,color_piel);
+	dibujar(180,290,40,20,color_piel);
+	dibujar(220,240,140,90,color_piel);
+	dibujar(240,220,120,90,color_piel);
+	dibujar(280,200,80,90,color_piel);
+	dibujar(330,180,90,20,color_piel);
+	dibujar(380,200,20,110,color_piel);
+	dibujar(360,250,20,40,color_piel);
+	dibujar(360,310,20,20,color_piel);
+	dibujar(360,310,20,20,color_piel);
+
+
+	
+	//Tatuaje
+
+	dibujar(260,270,60,20,color_tatuaje);
+	dibujar(280,250,20,60,color_tatuaje);
+
+
+	//Nariz
+
+	dibujar(400,250,40,40,color_nariz);
+
+	//Camisa
+
+	dibujar(200,330,140,40,color_camisa); //cuello
+	dibujar(170,360,190,60,color_camisa);
+	dibujar(320,380,80,60,color_camisa);
+
+	//Mano
+
+	dibujar(400,380,20,60,color_piel);
+	dibujar(420,400,20,40,color_piel);
+
+	
+
+	//Pantalón
+
+	dibujar(210,420,120,20,color_pantalon);
+	dibujar(230,440,120,80,color_pantalon);
+	dibujar(210,520,100,20,color_pantalon);
+
+	//Zapatos
+
+	dibujar(210,540,50,70,color_zapatos);
+	dibujar(260,590,80,20,color_zapatos);
+	dibujar(300,570,40,40,color_zapatos);
+	dibujar(340,590,20,20,color_zapatos);
+
+</script>
